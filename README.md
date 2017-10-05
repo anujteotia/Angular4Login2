@@ -1,27 +1,30 @@
 # Angular4Login2
 
-#Getting Started
+##Getting Started
+
 install nodejs
 
-#To install the Angular CLI:
+##To install the Angular CLI:
+
 npm install -g @angular/cli
 
-#Generating and serving an Angular project via a development server Create and run a new project:
+##Generating and serving an Angular project via a development server Create and run a new project:
+
 ng new my-project
 cd my-project
 ng serve
 
 
-Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Navigate to `http://localhost:4200/` The app will automatically reload if you change any of the source files.
 
-#Services :
-ng generate service services/login
+##Services :
+ng generate `service` services/login
 
-#Components :
-ng generate component components/login
+##Components :
+ng generate `component` components/login
 
-#Directvive :
-ng generate directive directives/alert
+##Directvive :
+ng generate `directive` directives/alert
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
