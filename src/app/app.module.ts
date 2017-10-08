@@ -1,7 +1,8 @@
-import { NgModule }      from '@angular/core';
+    import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { FileDropDirective, FileSelectDirective } from 'ng2-file-upload';
  
 // used to create fake backend
 import { fakeBackendProvider } from './helpers/fake-backend';
@@ -19,6 +20,8 @@ import { UserService } from './services/user.service';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UploadComponent } from './upload/upload.component';
+
  
 @NgModule({
     imports: [
@@ -32,7 +35,10 @@ import { RegisterComponent } from './register/register.component';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        UploadComponent,
+        FileDropDirective, 
+        FileSelectDirective
     ],
     providers: [
         AuthGuard,
